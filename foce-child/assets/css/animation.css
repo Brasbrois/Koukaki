@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* Mes Animations Keyframes */
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, -10px);
+  }
+  20% {
+    transform: translate(10px, -20px);
+  }
+  30% {
+    transform: translate(-20px, -10px);
+  }
+  40% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  60% {
+    transform: translate(20px, 10px);
+  }
+  70% {
+    transform: translate(-10px, 20px);
+  }
+  80% {
+    transform: translate(10px, 10px);
+  }
+  90% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/* Mouvement du titre dans la bannière */
+.banner img {
+  position: absolute;
+  height: 479px;
+  width: auto;
+  top: 200px;
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Mouvement des chats dans le menu ouvert */
+.orange {
+  top: 40em;
+  left: 4em;
+  animation: float 8s ease-in-out infinite;
+}
+
+.noir {
+  top: 30em;
+  left: 75em;
+  animation: float 10s ease-in-out infinite;
+}
+
+.bleu {
+  top: 13em;
+  left: 19em;
+  animation: float 9s ease-in-out infinite reverse;
+}
+
+/* Rotation des fleurs */
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.site-footer::after,
+.site-footer ul::after,
+.site-footer::before,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+.story h2::after,
+.fleur {
+  animation: rotate 20s normal linear infinite;
+}
+
+/* Animation pour les titres */
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Animation pour les sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=animation.css.map */

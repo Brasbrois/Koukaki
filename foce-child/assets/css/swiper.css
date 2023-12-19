@@ -1,0 +1,33 @@
+/* SWIPER */
+.swiper {
+  width: 160%;
+  height: 100%;
+  display: inline-block;
+  flex-direction: column;
+  margin: 6em;
+}
+.swiper-wrapper {
+  margin-left: -12em;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 25px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper .slide-1 figcaption {
+  padding-top: 40px;
+}
+.swiper #titrePersonnages {
+  background-image: url("http://koukaki.local/wp-content/uploads/2023/08/orange_characters_bg.png");
+  margin-right: 40%;
+}
+
+/*# sourceMappingURL=swiper.css.map */

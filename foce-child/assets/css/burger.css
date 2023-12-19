@@ -1,0 +1,133 @@
+/* MENU BURGER */
+/* Hide all links except N3 */
+.first-menu li:not(:nth-child(3)) {
+  display: none;
+}
+
+/* Style for the open menu */
+.opened-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff5e9;
+  color: black;
+}
+
+/* Small logo in the open menu */
+.menu-img {
+  width: 12%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  filter: drop-shadow(0px 0.273343px 0px #ffe600);
+}
+
+/* Modify display and style of the link list */
+.liste-burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.liste-burger li {
+  font-size: 64px;
+  line-height: 84px;
+  padding-bottom: 1%;
+}
+
+.liste-burger li a:hover {
+  color: black;
+  text-shadow: 0px 0px 14px #ff5c00;
+}
+
+/* Modify style of the footer link in the open menu */
+.footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.burger-menu-footer-link {
+  padding-top: 4%;
+  width: 160px;
+  list-style: none;
+}
+
+.burger-menu-footer-link a {
+  text-decoration: none;
+}
+
+/* Style for the small bars of the burger button */
+.main-navigation .bar {
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin-block: 2px;
+  width: 20px;
+}
+
+/* Position of the burger button */
+.bouton-burger {
+  position: absolute;
+  cursor: pointer;
+  left: 90%;
+  top: 45%;
+}
+
+/* Cross menu animation */
+.bar:not(:nth-child(2)) {
+  transition: 0.4s;
+}
+
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bar:nth-child(2) {
+  transition: 0.2s;
+}
+
+/* Rotation of the top and bottom bars */
+.change .bar:first-child {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.change .bar:last-child {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/* Cats and flowers in the open menu */
+.images-menu img {
+  position: absolute;
+}
+
+.images-menu .chat {
+  width: 8%;
+}
+
+.mauve {
+  top: 20em;
+  left: 100em;
+  width: 5%;
+}
+
+.violette {
+  top: 10em;
+  left: -5em;
+}
+
+.hibiscus {
+  top: 33em;
+  left: 79em;
+}
+
+.tournesol {
+  top: 12em;
+  left: 74em;
+}
+
+.jaune {
+  top: 32em;
+  left: 23em;
+  width: 6%;
+}
+
+/*# sourceMappingURL=burger.css.map */

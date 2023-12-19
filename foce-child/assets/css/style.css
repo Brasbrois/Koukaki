@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* FLEURS */
+/* Modification de l'emplacement de la fleur violet du footer */
+.site-footer::after {
+  top: 0;
+  bottom: auto !important;
+}
+
+/* Modification de l'emplacement de la fleur blanche de la section histoire */
+.story h2::after {
+  transform-origin: 77px 77px;
+}
+
+/* TITRES */
+/* Titres invisibles avant animation */
+h2,
+h3 {
+  opacity: 0;
+}
+
+/* SECTIONS */
+/* Sections + footer invisibles avant fade-in */
+section,
+footer {
+  opacity: 0;
+}
+
+/* Modification de la section Nomination*/
+#nominations {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 280px;
+  margin-top: 10%;
+  margin-bottom: -25%;
+  position: relative;
+  z-index: -1;
+}
+#nominations h2 {
+  font-size: 2.625rem;
+  background-image: url("http://koukaki.local/wp-content/uploads/2023/08/orange_nominations_bg.png");
+}
+#nominations img {
+  margin-left: -45%;
+  padding-top: 15%;
+}
+
+/* FOOTER */
+.site-footer ul {
+  margin-top: 25%;
+}
+
+/* IMAGES */
+/* Modification Background Section Lieu */
+.story #place {
+  background-image: url("http://koukaki.local/wp-content/uploads/2023/08/Studio_Koukaki-image_place.png");
+}
+
+/* Titre sur vidéo + Animation */
+.banner {
+  position: relative;
+  height: 806px;
+}
+
+/* Nuages */
+.nuage-grand,
+.nuage-petit {
+  position: absolute;
+  filter: blur(1rem);
+}
+
+/*# sourceMappingURL=style.css.map */
